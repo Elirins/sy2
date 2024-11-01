@@ -1,0 +1,139 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 顶部导航栏图标 -->
+    <ImageView
+        android:id="@+id/icon_space_stations"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/space_stations"
+        android:src="@drawable/space_station_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_flights"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/flights"
+        android:src="@drawable/flights_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_space_stations"
+        app:layout_constraintEnd_toStartOf="@id/icon_rovers"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/icon_rovers"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/rovers"
+        android:src="@drawable/rover_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 目的地选择 -->
+
+    <!-- 出发模式 -->
+
+    <!-- 旅行人数选择 -->
+
+    <!-- 星球图片 -->
+
+    <!-- 出发按钮 -->
+
+    <Button
+        android:id="@+id/button_dca"
+        android:layout_width="164dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="@color/green"
+        android:text="DCA"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <Button
+        android:id="@+id/swapButton"
+        android:layout_width="95dp"
+        android:layout_height="88dp"
+        android:background="@drawable/double_arrows"
+        android:contentDescription="@string/swap_icon"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <Button
+        android:id="@+id/button_mars"
+        android:layout_width="162dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/green"
+        android:text="MARS"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/text_one_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:text="One Way"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <Switch
+        android:id="@+id/switch_one_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/text_one_way"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toEndOf="@id/text_one_way"
+        app:layout_constraintTop_toTopOf="@id/text_one_way"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/button_traveller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:text="1 Traveller"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_one_way" />
+
+    <ImageView
+        android:id="@+id/image_planet"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/galaxy"
+        android:src="@drawable/galaxy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <ImageView
+        android:id="@+id/icon_flights_2"
+        android:layout_width="41dp"
+        android:layout_height="46dp"
+        android:contentDescription="@string/flights"
+        android:src="@drawable/flights_icon"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <Button
+        android:id="@+id/button_depart"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="DEPART"
+        android:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

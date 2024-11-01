@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_layout" type="id">@id/main_layout</item>
+    <item name="linear_layout" type="id">@id/linear_layout</item>
+    <item name="label_layout" type="id">@id/label_layout</item>
+    <item name="con_layout" type="id">@id/con_layout</item>
+    <item name="other_layout" type="id">@id/other_layout</item>
+</resources>

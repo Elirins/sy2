@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">sy2</string>
+    <string name="space_stations">space_station_icon</string>
+    <string name="flights">flights</string>
+    <string name="rovers">rovers</string>
+    <string name="swap_icon">double_arrows</string>
+    <string name="galaxy">galaxy</string>
+</resources>

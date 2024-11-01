@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 水平布局用于放置按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示线性布局" />
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示表格布局" />
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示约束布局" />
+
+        <Button
+            android:id="@+id/buttonD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示旅行" />
+    </LinearLayout>
+
+    <!-- FrameLayout用于切换布局 -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/linear_layout"
+            layout="@layout/linear_layout"
+            android:visibility="visible"/> <!-- 初始可见 -->
+
+        <include
+            android:id="@+id/label_layout"
+            layout="@layout/label_layout"
+            android:visibility="gone"/> <!-- 初始隐藏 -->
+
+        <include
+            android:id="@+id/con_layout"
+            layout="@layout/con_layout"
+            android:visibility="gone"/> <!-- 初始隐藏 -->
+
+        <include
+            android:id="@+id/other_layout"
+            layout="@layout/other_layout"
+            android:visibility="gone"/> <!-- 初始隐藏 -->
+    </FrameLayout>
+
+</LinearLayout>
